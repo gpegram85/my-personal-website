@@ -63,7 +63,7 @@ p#gp {
     font-weight: 700;
     color: #e5e5e5;
     margin: 0;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
 p {
@@ -76,4 +76,24 @@ p {
 
 h3 {
     color: #FCA311;
+}
+
+#hiddenElement {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out, opacity 0.5s ease-out;
+    margin-top: 40px;
+}
+  
+#hiddenElement.shown {
+    opacity: 1;
+    max-height: 100px; /* Set a suitable max-height for your element */
+}
+
+a#hidden {
+    font-family: 'Roboto', sans-serif;
+    color: #FCA311;
+    font-size: 20px;
+    margin: 0;
 }
